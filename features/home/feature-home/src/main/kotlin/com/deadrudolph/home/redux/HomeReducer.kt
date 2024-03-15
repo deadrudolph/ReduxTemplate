@@ -9,7 +9,7 @@ import com.deadrudolph.uicomponents.ui_model.ErrorModel
 import com.deadrudolph.uicomponents.ui_model.LoadingModel
 import javax.inject.Inject
 
-class HomeReducer @Inject constructor() :
+internal class HomeReducer @Inject constructor() :
     Reducer<HomeState, HomeAction>() {
 
     override fun updateState(

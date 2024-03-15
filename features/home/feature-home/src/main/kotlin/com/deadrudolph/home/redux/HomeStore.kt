@@ -4,7 +4,7 @@ import com.deadrudolph.core.base.store.ReduxStore
 import com.deadrudolph.home.redux.HomeAction.FetchData
 import javax.inject.Inject
 
-class HomeStore @Inject constructor(
+internal class HomeStore @Inject constructor(
     reducer: HomeReducer,
     middleWare: HomeMiddleware? = null,
 ) : ReduxStore<HomeState, HomeAction>(

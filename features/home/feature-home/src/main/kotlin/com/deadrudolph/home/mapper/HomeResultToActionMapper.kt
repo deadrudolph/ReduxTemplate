@@ -8,7 +8,7 @@ import com.deadrudolph.common_domain.state.Result.Success
 import com.deadrudolph.home.redux.HomeAction
 import com.deadrudolph.home_domain.domain.model.response.User
 
-class HomeResultToActionMapper {
+internal class HomeResultToActionMapper {
 
     operator fun invoke(
         result: Result<List<User>>,

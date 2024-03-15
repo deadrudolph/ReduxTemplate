@@ -8,7 +8,7 @@ import com.deadrudolph.profile_domain.domain.model.request.UserPageRequest
 import com.deadrudolph.profile_domain.domain.model.response.User
 import javax.inject.Inject
 
-class FirstProfileStore @Inject constructor(
+internal class FirstProfileStore @Inject constructor(
     reducer: FirstProfileReducer,
     middleWare: FirstProfileMiddleware? = null,
 ) : ReduxStore<ProfileState<List<User>>, FirstProfileAction>(

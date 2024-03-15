@@ -8,7 +8,7 @@ import com.deadrudolph.common_domain.state.Result.Success
 import com.deadrudolph.profile.redux.first.FirstProfileAction
 import com.deadrudolph.profile_domain.domain.model.response.User
 
-class FirstProfileResultToActionMapper {
+internal class FirstProfileResultToActionMapper {
 
     operator fun invoke(
         result: Result<List<User>>,

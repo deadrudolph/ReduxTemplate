@@ -5,7 +5,7 @@ import dagger.Module
 import dagger.Provides
 
 @Module
-class MapperModule {
+internal class MapperModule {
 
     @Provides
     fun getHomeResultToActionMapper(): HomeResultToActionMapper = HomeResultToActionMapper()

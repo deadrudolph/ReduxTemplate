@@ -7,7 +7,7 @@ import com.deadrudolph.profile.redux.second.SecondProfileAction.NavigateToHome
 import com.deadrudolph.profile_domain.domain.model.response.User
 import javax.inject.Inject
 
-class SecondProfileStore @Inject constructor(
+internal class SecondProfileStore @Inject constructor(
     reducer: SecondProfileReducer,
     middleWare: SecondProfileMiddleware? = null,
 ) : ReduxStore<ProfileState<User>, SecondProfileAction>(

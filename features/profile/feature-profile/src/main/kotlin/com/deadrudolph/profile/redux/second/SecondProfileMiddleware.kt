@@ -13,7 +13,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import javax.inject.Inject
 
-class SecondProfileMiddleware @Inject constructor(
+internal class SecondProfileMiddleware @Inject constructor(
     private val getUserByIdUseCase: GetUserByIdUseCase,
     private val navigator: Navigator,
     private val mapper: SecondProfileResultToActionMapper

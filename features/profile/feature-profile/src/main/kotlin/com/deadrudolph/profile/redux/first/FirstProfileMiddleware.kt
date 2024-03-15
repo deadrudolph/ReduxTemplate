@@ -14,7 +14,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import javax.inject.Inject
 
-class FirstProfileMiddleware @Inject constructor(
+internal class FirstProfileMiddleware @Inject constructor(
     private val getUsersPageUseCase: GetUsersPageUseCase,
     private val navigator: Navigator,
     private val mapper: FirstProfileResultToActionMapper

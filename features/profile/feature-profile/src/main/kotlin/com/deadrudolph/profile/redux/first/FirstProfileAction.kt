@@ -4,7 +4,7 @@ import com.deadrudolph.core.base.action.Action
 import com.deadrudolph.profile_domain.domain.model.request.UserPageRequest
 import com.deadrudolph.profile_domain.domain.model.response.User
 
-sealed class FirstProfileAction : Action {
+internal sealed class FirstProfileAction : Action {
     data object Loading : FirstProfileAction()
     data class Data(val data: List<User>) : FirstProfileAction()
     data object CancelLoading : FirstProfileAction()

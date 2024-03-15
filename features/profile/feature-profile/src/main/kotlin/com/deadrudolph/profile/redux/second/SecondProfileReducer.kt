@@ -11,7 +11,8 @@ import com.deadrudolph.uicomponents.ui_model.ErrorModel
 import com.deadrudolph.uicomponents.ui_model.LoadingModel
 import javax.inject.Inject
 
-class SecondProfileReducer @Inject constructor() : Reducer<ProfileState<User>, SecondProfileAction>() {
+internal class SecondProfileReducer @Inject constructor() :
+    Reducer<ProfileState<User>, SecondProfileAction>() {
 
     override fun updateState(
         action: SecondProfileAction,
