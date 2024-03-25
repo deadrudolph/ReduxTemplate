@@ -3,4 +3,4 @@ Dependency structure. Every arrow represents a dependency, e.g: "App -> Feature"
 
 UI layer Structure.
 
-![VIEW](https://github.com/deadrudolph/ReduxTemplate/assets/85884456/06ca7ca3-8a2b-42b6-a3a8-f949ee74f762)
+![VIEW (1)](https://github.com/deadrudolph/ReduxTemplate/assets/85884456/86e7aa8c-f10a-4943-9020-bac1bfccb6ef)
