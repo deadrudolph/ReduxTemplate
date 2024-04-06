@@ -28,6 +28,7 @@ dependencies {
     implementation(libs.composeMaterial)
     implementation(libs.composeUITooling)
     implementation(libs.composeFoundation)
+    implementation(libs.immutableList)
     implementation(libs.material)
     implementation(libs.dagger)
     ksp(libs.daggerCompiler)

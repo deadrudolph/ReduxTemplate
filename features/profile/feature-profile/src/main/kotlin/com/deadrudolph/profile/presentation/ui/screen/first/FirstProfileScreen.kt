@@ -29,6 +29,7 @@ import com.deadrudolph.profile.redux.first.FirstProfileStore
 import com.deadrudolph.profile_domain.domain.model.response.User
 import com.deadrudolph.uicomponents.compose.components.DefaultErrorDialog
 import com.deadrudolph.uicomponents.compose.components.DefaultLoading
+import kotlinx.collections.immutable.ImmutableList
 
 @Composable
 internal fun FirstProfileScreen(
@@ -68,7 +69,7 @@ internal fun FirstProfileScreen(
 
 @Composable
 private fun ScreenContent(
-    usersList: List<User>,
+    usersList: ImmutableList<User>,
     onClickNext: (userId: String) -> Unit
 ) {
     Column(

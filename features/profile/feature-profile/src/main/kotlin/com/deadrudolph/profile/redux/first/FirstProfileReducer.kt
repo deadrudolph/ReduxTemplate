@@ -9,15 +9,16 @@ import com.deadrudolph.profile.redux.first.FirstProfileAction.Loading
 import com.deadrudolph.profile_domain.domain.model.response.User
 import com.deadrudolph.uicomponents.ui_model.ErrorModel
 import com.deadrudolph.uicomponents.ui_model.LoadingModel
+import kotlinx.collections.immutable.ImmutableList
 import javax.inject.Inject
 
 internal class FirstProfileReducer @Inject constructor() :
-    Reducer<ProfileState<List<User>>, FirstProfileAction>() {
+    Reducer<ProfileState<ImmutableList<User>>, FirstProfileAction>() {
 
     override fun updateState(
         action: FirstProfileAction,
-        currentState: ProfileState<List<User>>?
-    ): ProfileState<List<User>>? {
+        currentState: ProfileState<ImmutableList<User>>?
+    ): ProfileState<ImmutableList<User>>? {
         return when (action) {
             is Error -> {
                 currentState?.copy(

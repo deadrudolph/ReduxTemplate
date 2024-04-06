@@ -7,11 +7,12 @@ import com.deadrudolph.common_domain.state.Result.Loading
 import com.deadrudolph.common_domain.state.Result.Success
 import com.deadrudolph.home.redux.HomeAction
 import com.deadrudolph.home_domain.domain.model.response.User
+import kotlinx.collections.immutable.ImmutableList
 
 internal class HomeResultToActionMapper {
 
     operator fun invoke(
-        result: Result<List<User>>,
+        result: Result<ImmutableList<User>>,
         defaultErrorMessage: String
     ): HomeAction {
         return when (result) {

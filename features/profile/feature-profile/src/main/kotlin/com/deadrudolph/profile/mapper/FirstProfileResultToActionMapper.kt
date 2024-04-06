@@ -7,11 +7,12 @@ import com.deadrudolph.common_domain.state.Result.Loading
 import com.deadrudolph.common_domain.state.Result.Success
 import com.deadrudolph.profile.redux.first.FirstProfileAction
 import com.deadrudolph.profile_domain.domain.model.response.User
+import kotlinx.collections.immutable.ImmutableList
 
 internal class FirstProfileResultToActionMapper {
 
     operator fun invoke(
-        result: Result<List<User>>,
+        result: Result<ImmutableList<User>>,
         defaultErrorMessage: String
     ): FirstProfileAction {
         return when (result) {

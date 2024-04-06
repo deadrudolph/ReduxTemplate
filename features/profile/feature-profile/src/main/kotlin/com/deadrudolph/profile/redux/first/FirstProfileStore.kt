@@ -6,12 +6,13 @@ import com.deadrudolph.profile.redux.first.FirstProfileAction.FetchData
 import com.deadrudolph.profile.redux.first.FirstProfileAction.NavigateToSecondPage
 import com.deadrudolph.profile_domain.domain.model.request.UserPageRequest
 import com.deadrudolph.profile_domain.domain.model.response.User
+import kotlinx.collections.immutable.ImmutableList
 import javax.inject.Inject
 
 internal class FirstProfileStore @Inject constructor(
     reducer: FirstProfileReducer,
     middleWare: FirstProfileMiddleware? = null,
-) : ReduxStore<ProfileState<List<User>>, FirstProfileAction>(
+) : ReduxStore<ProfileState<ImmutableList<User>>, FirstProfileAction>(
     reducer,
     middleWare,
     ProfileState()

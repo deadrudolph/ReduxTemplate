@@ -13,6 +13,7 @@ dependencies {
     implementation(projects.common.commonDomain)
 
     implementation(libs.dagger)
+    implementation(libs.immutableList)
     ksp(libs.daggerCompiler)
     implementation(libs.retrofit)
     implementation(libs.moshiKotlin)
