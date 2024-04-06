@@ -26,7 +26,7 @@ import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.deadrudolph.core.base.bridge.ActivityActions
+import com.deadrudolph.core.base.facade.ActivityFacade
 import com.deadrudolph.navigation.GlobalNavTarget
 import com.deadrudolph.navigation.Navigator
 import com.deadrudolph.navigation.di.component.NavigationComponentHolder
@@ -37,7 +37,7 @@ import com.deadrudolph.template_redux.navigation.tab.TabItem
 import com.deadrudolph.uicomponents.compose.theme.CustomTheme
 import com.deadrudolph.uicomponents.compose.theme.DefaultTheme
 
-internal class MainActivity : ComponentActivity(), ActivityActions {
+internal class MainActivity : ComponentActivity(), ActivityFacade {
 
     override fun getTheme(): Resources.Theme {
         val theme = super.getTheme()

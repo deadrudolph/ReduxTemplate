@@ -1,6 +1,6 @@
 package com.deadrudolph.profile.redux.second
 
-import com.deadrudolph.core.base.store.ReduxStore
+import com.deadrudolph.core.base.store.BaseReduxStore
 import com.deadrudolph.profile.redux.ProfileState
 import com.deadrudolph.profile.redux.second.SecondProfileAction.FetchData
 import com.deadrudolph.profile.redux.second.SecondProfileAction.NavigateToHome
@@ -10,7 +10,7 @@ import javax.inject.Inject
 internal class SecondProfileStore @Inject constructor(
     reducer: SecondProfileReducer,
     middleWare: SecondProfileMiddleware? = null,
-) : ReduxStore<ProfileState<User>, SecondProfileAction>(
+) : BaseReduxStore<ProfileState<User>, SecondProfileAction>(
     reducer,
     middleWare,
     ProfileState()

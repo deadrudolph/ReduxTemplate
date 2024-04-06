@@ -1,6 +1,6 @@
 package com.deadrudolph.profile.redux.first
 
-import com.deadrudolph.core.base.store.ReduxStore
+import com.deadrudolph.core.base.store.BaseReduxStore
 import com.deadrudolph.profile.redux.ProfileState
 import com.deadrudolph.profile.redux.first.FirstProfileAction.FetchData
 import com.deadrudolph.profile.redux.first.FirstProfileAction.NavigateToSecondPage
@@ -12,7 +12,7 @@ import javax.inject.Inject
 internal class FirstProfileStore @Inject constructor(
     reducer: FirstProfileReducer,
     middleWare: FirstProfileMiddleware? = null,
-) : ReduxStore<ProfileState<ImmutableList<User>>, FirstProfileAction>(
+) : BaseReduxStore<ProfileState<ImmutableList<User>>, FirstProfileAction>(
     reducer,
     middleWare,
     ProfileState()
